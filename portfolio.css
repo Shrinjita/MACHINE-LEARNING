@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #ac325b;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #DB7093;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    
+}
+h1, h2, p {
+    margin: 10px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.project {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    color:black;
+    background-color: #FFC0CB;
+}
+footer {
+    text-align: center;
+    background-color: #ffa3a3;
+    padding: 10px;
+    color:black;
+}
