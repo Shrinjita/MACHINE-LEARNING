@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="c.css">
+    <style>
+        .rounded-rectangle-box {
+          border: 2px solid #0a0a0a;
+          border-radius: 100px;
+          padding: 10px;
+          justify-content: center;
+          width: 400px;
+          align-items: center;
+          background-color: #f0f0f0;
+          text-align: center;
+        }
+      </style>
+</head>
+<body>
+    <header>
+        <h1>Carbon Footprint Calculator</h1>
+    </header>
+    <main>
+        <section>
+            <form id="carbonForm">
+                <label for="food">Food Intake (kg per month):</label>
+                <input type="number" id="food" required>
+                
+                <label for="electricity">Electricity Usage (kWh per month):</label>
+                <input type="number" id="electricity" required>
+                
+                <label for="gas">Natural Gas Usage (therms per month):</label>
+                <input type="number" id="gas" required>
+                
+                <label for="fuel">Fuel Usage (gallons per month):</label>
+                <input type="number" id="fuel" required>
+                
+                <button type="submit">Calculate Your Carbon Footprint</button>
+            </form>
+        </section>
+        <section id="resultSection" style="display:none;">
+            <h2>Result</h2>
+            <p>Your carbon footprint is: <span id="carbonResult">0</span> kg CO2e per month</p>
+        </section>
+    </main>
+    <script src="c.js"></script>
+</body>
+</html>

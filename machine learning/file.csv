@@ -1,0 +1,41 @@
+food name,food_cost,food_usage
+Potatoes,53.61,1
+onion,14.39,2
+Potatoes,40.4,3
+tomatoes,32.7,4
+bell peppers,66.92,5
+spinach,70.69,6
+cabbage,57.63,7
+cauliflower,91.03,8
+spinach,3.05,9
+green beans,71.05,0
+okra,91.72,1
+eggplant,81.25,2
+bananas,25.78,3
+apples,13.22,4
+oranges,16.25,5
+grapes,53.68,6
+mangoes,73.36,7
+papayas,29.16,8
+pomegranates,68.53,9
+lemons,80.01,1
+eggs,42.38,2
+milk,56.2,3
+curd,26.65,4
+paneer,3.38,5
+rice,44.96,7
+wheat flour,31.44,8
+masoor dal,95.56,9
+toor dal,38.54,0
+other lentils,85.32,1
+chickpeas,3.74,2
+split peas,72.19,3
+urad dal,13.04,4
+rice flour,85.19,5
+semolina,29.67,6
+poha,18.38,7
+chiwda,92.73,8
+red chilli,13.13,9
+coriander,53.57,0
+cumin,29.63,1
+mustard,32.04,2
