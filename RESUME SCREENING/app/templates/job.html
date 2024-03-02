@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Seekers Page</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy4SbHXeBtbZUnJq6IeZ3Immmf2WI5yFaa" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      padding-top: 56px; /* Adjust according to your navbar height */
+      background-color: #f8f9fa; /* Light grey background */
+    }
+
+    /* Job Seekers Page Styles */
+    section {
+      padding: 50px 0;
+    }
+
+    h2 {
+      color: #17a2b8;
+    }
+
+    /* Search Bar Styles */
+    .search-bar {
+      background-color: #fff;
+      border: 2px solid #17a2b8;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 50px auto;
+      position: relative;
+      max-width: 400px;
+    }
+
+    /* View All Jobs Button Styles */
+    .btn-view-all {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #ffc107; /* Yellow color */
+      border: none;
+    }
+
+    /* Suggestive Search Styles */
+    #suggestiveResults {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      border: 2px solid #17a2b8;
+      border-top: none;
+      border-radius: 0 0 5px 5px;
+      z-index: 1;
+    }
+
+    .suggestive-result {
+      padding: 10px;
+      cursor: pointer;
+      border-bottom: 1px solid #dee2e6;
+    }
+
+    .suggestive-result:last-child {
+      border-bottom: none;
+    }
+
+    /* Animation */
+    .fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Job Seekers Page -->
+  <section class="container mt-5 fade-in">
+    <h2 class="text-center mb-4">Explore Job Opportunities</h2>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" id="searchInput" class="form-control" placeholder="Search for jobs...">
+      <div id="suggestiveResults"></div>
+      <button class="btn btn-view-all btn-primary" id="viewAllJobsBtn">View All Jobs</button>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-d6I6lQVl00jqhHctuWXAJUEQqbu5+99vQNfYDX4nLOlt5C38fHzI9b3Xhhe5t+kF"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy4SbHXeBtbZUnJq6IeZ3Immmf2WI5yFaa"
+      crossorigin="anonymous"></script>
+
+    <!-- Custom JavaScript for suggestive search and button functionality -->
+    <script>
+      // Function to redirect to job_details.html with the selected job title
+      function redirectToJobDetails(jobTitle) {
+        // Construct the URL with the job title parameter
+       var url = 'job_details.html?job=' + encodeURIComponent(jobTitle);
+
+        
+        // Redirect to the new URL
+        window.location.href = url;
+      }
+
+      // Event listener for the "View All Jobs" button
+      document.getElementById('viewAllJobsBtn').addEventListener('click', function() {
+        // Redirect to job_details.html without a specific job title
+        redirectToJobDetails('');
+      });
+    </script>
+  </section>
+
+</body>
+
+</html>

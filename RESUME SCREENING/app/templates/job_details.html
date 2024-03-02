@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Details</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy4SbHXeBtbZUnJq6IeZ3Immmf2WI5yFaa" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      padding-top: 56px; /* Adjust according to your navbar height */
+      background-color: #f8f9fa; /* Light grey background */
+    }
+
+    /* Job Details Styles */
+    section {
+      padding: 50px 0;
+    }
+
+    h2 {
+      color: #17a2b8;
+    }
+
+    .job-details-container {
+      background-color: #fff;
+      border: 2px solid #17a2b8;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 50px auto;
+      max-width: 600px;
+    }
+
+    /* Buttons Styles */
+    .btn-primary {
+      background-color: #ffc107; /* Yellow color */
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #ffca2b; /* Lighter yellow on hover */
+    }
+
+    /* Animation */
+    .fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Job Details Section -->
+  <section class="container mt-5 fade-in">
+    <h2 class="text-center mb-4">Job Details</h2>
+
+    <!-- Job Details Content -->
+    <div class="job-details-container">
+      <h4>Job Title 1</h4>
+      <p>Company: XYZ Corporation</p>
+      <p>Location: City, Country</p>
+      <p>Detailed job description, requirements, and application instructions go here.</p>
+      <div class="text-center mt-3">
+        <button class="btn btn-primary" onclick="applyNow()">Apply Now</button>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-d6I6lQVl00jqhHctuWXAJUEQqbu5+99vQNfYDX4nLOlt5C38fHzI9b3Xhhe5t+kF"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy4SbHXeBtbZUnJq6IeZ3Immmf2WI5yFaa"
+      crossorigin="anonymous"></script>
+
+    <!-- Custom JavaScript for button functionality -->
+    <script>
+      function applyNow() {
+        // Implement your apply now functionality here
+        alert('Application submitted successfully!');
+      }
+    </script>
+  </section>
+
+</body>
+
+</html>
