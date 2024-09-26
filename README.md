@@ -1,7 +1,4 @@
-# MACHINE LEARNING
-
-## Description
-This repository contains a collection of machine learning projects and datasets focused on various applications, including breast cancer prediction, house price prediction, and food franchise analysis. Each project showcases different machine learning techniques and algorithms, providing practical insights into the field of data science.
+Each project showcases different machine learning techniques and algorithms, providing practical insights into the field of data science.
 
 ## Features
 - **Diverse Datasets**: A variety of datasets for different machine learning tasks, including classification, regression, and forecasting.
